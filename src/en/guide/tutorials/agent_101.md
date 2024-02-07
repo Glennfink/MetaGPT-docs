@@ -49,6 +49,7 @@ In our scenario, we define a `SimpleWriteCode` subclassed `Action`. Although it 
 ````python
 import re
 from metagpt.actions import Action
+from metagpt.environment import Message
 
 class SimpleWriteCode(Action):
     PROMPT_TEMPLATE: str = """
